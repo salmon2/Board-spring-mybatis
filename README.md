@@ -31,7 +31,7 @@ DB : H2-Database
 ## 프로젝트 생성하기
 
 ---
-![그림](/assets/img/spring/01.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560839-10203380-d07c-11eb-8e9e-1426b906e61a.png)
 
 Spring Initializr를 이용하여 쉽게 관련된 라이브러리들을 설치할 수 있다.
 
@@ -72,7 +72,7 @@ INSERT INTO tbl_board(title, content, name) VALUES('title6', 'content6', 'name6'
 INSERT INTO tbl_board(title, content, name) VALUES('title7', 'content7', 'name7');
 INSERT INTO tbl_board(title, content, name) VALUES('title8', 'content8', 'name8');
 ```
-![그림](/assets/img/spring/board/02.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560819-0bf41600-d07c-11eb-9c49-e0b1f089c811.png)
 
 ---
 ## mybatis 연결하기
@@ -231,7 +231,7 @@ public class BoardController {
 ```
 ```model.addAttribute("cnt", value)``` 를 통해서 가져온 cnt 변수를 `[[$cnt]]`로 화면에 출력할 수 있다. `[[$]]`는 타임리프 문법이다.
 
-![그림](/assets/img/spring/board/03.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560822-0d254300-d07c-11eb-9f2b-742c4ddba14e.png)
 
 ### service
 
@@ -274,7 +274,7 @@ public class BoardService {
 각각 따로 false로 달아준다.
 
 
-![그림](/assets/img/spring/board/04.jpg)
+![그림](https://user-images.githubusercontent.com/23234577/122560824-0dbdd980-d07c-11eb-8613-95b80615eebf.jpg)
 
 controller는 servcie계층을 가지며 service계층은 repository(dao, mapper)계층을 가지고 있다.
 모든 연결은 controller에서부터 시작하며 controller에서 service로 데이터를 요청하고 요청한 데이터를 필두로
@@ -367,7 +367,7 @@ public class BoardService {
 </mapper>
 ```
 
-![그림](/assets/img/spring/board/05.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560827-0e567000-d07c-11eb-93c8-1287046a57ab.png)
 
 
 ---
@@ -582,7 +582,7 @@ public interface BoardMapper{
     INSERT INTO tbl_board (title, content, name) VALUES (#{title}, #{content}, #{name});
 </insert>
 ```
-![그림](/assets/img/spring/board/06.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560830-0e567000-d07c-11eb-9c85-98878d42191b.png)
 
 ---
 ## 게시글 수정하기(R)
@@ -693,7 +693,7 @@ public interface BoardMapper{
 </update>
 
 ```
-![그림](/assets/img/spring/board/07.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560832-0eef0680-d07c-11eb-9ec0-e6cf1aebd620.png)
 ---
 ## 게시글 삭제하기(R)
 
@@ -744,9 +744,9 @@ public interface BoardMapper{
     WHERE boardId = #{boardId};
 </delete>
 ```
-![그림](/assets/img/spring/board/08.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560834-0f879d00-d07c-11eb-92fd-a20ac2ae7290.png)
 
-![그림](/assets/img/spring/board/09.png)
+![그림](https://user-images.githubusercontent.com/23234577/122560835-0f879d00-d07c-11eb-9a67-b70c3ec23565.png)
 
 ---
 ## 전체 코드
